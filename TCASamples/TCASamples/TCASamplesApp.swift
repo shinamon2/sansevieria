@@ -25,7 +25,7 @@ struct TCASamplesApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppTabview()
         }
         .modelContainer(sharedModelContainer)
     }
