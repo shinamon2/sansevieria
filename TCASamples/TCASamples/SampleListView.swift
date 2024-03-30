@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct SampleListView: View {
     var body: some View {
@@ -13,13 +14,15 @@ struct SampleListView: View {
             Form {
                 Section {
                     NavigationLink("ナビゲーションスタック") {
-                        NavigateView01()
+                        Navigate01View(store: Store(initialState: Navigate01Feature.State(), reducer: {
+                            Navigate01Feature()
+                        }))
                     }
                     NavigationLink("モーダル") {
                         // TODO:
                     }
                     NavigationLink("アラート") {
-                        // TODO: 
+                        // TODO:
                     }
                 } header: {
                     Text("画面遷移系のサンプル")
