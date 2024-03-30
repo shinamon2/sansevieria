@@ -1,5 +1,5 @@
 //
-//  Navigate02Feature.swift
+//  Navigate03Feature.swift
 //  TCASamples
 //
 //  Created by kaguser on 2024/03/30.
@@ -8,12 +8,12 @@
 import ComposableArchitecture
 
 @Reducer
-struct Navigate02Feature {
+struct Navigate03Feature {
     @ObservableState
     struct State: Equatable {
         var loadState: LoadState = .none
         
-        static func == (lhs: Navigate02Feature.State, rhs: Navigate02Feature.State) -> Bool {
+        static func == (lhs: Navigate03Feature.State, rhs: Navigate03Feature.State) -> Bool {
             lhs.loadState == rhs.loadState
         }
     }

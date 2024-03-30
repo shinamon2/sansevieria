@@ -1,5 +1,5 @@
 //
-//  Navigate02View.swift
+//  Navigate03View.swift
 //  TCASamples
 //
 //  Created by kaguser on 2024/03/30.
@@ -8,14 +8,12 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct Navigate02View: View {
-    @Bindable var store: StoreOf<Navigate02Feature> = Store(initialState: Navigate02Feature.State()) {
-        Navigate02Feature()
-    }
+struct Navigate03View: View {
+    @Bindable var store: StoreOf<Navigate03Feature>
     
     var body: some View {
         VStack(spacing: 48){
-            Text("02画面。")
+            Text("03画面")
             
             Button("何かアクション") {
                 store.send(.anyTapped)
