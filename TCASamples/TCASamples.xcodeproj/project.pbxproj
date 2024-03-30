@@ -23,6 +23,7 @@
 		50E296812BB78F9A00D081D8 /* LoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E296802BB78F9A00D081D8 /* LoadState.swift */; };
 		50E296842BB7A1D500D081D8 /* Navigate02Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E296822BB7A1D500D081D8 /* Navigate02Feature.swift */; };
 		50E296852BB7A1D500D081D8 /* Navigate02View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E296832BB7A1D500D081D8 /* Navigate02View.swift */; };
+		50E296872BB7AA8F00D081D8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E296862BB7AA8F00D081D8 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		50E296802BB78F9A00D081D8 /* LoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadState.swift; sourceTree = "<group>"; };
 		50E296822BB7A1D500D081D8 /* Navigate02Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigate02Feature.swift; sourceTree = "<group>"; };
 		50E296832BB7A1D500D081D8 /* Navigate02View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigate02View.swift; sourceTree = "<group>"; };
+		50E296862BB7AA8F00D081D8 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 		50E2967F2BB78F8100D081D8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				50E296862BB7AA8F00D081D8 /* Logger.swift */,
 				50E296802BB78F9A00D081D8 /* LoadState.swift */,
 			);
 			path = Common;
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BDC0E22BB7860800ED1E7B /* ContentView.swift in Sources */,
+				50E296872BB7AA8F00D081D8 /* Logger.swift in Sources */,
 				50BDC0E42BB7860800ED1E7B /* Item.swift in Sources */,
 				50E2967E2BB78F3700D081D8 /* Navigate01Feature.swift in Sources */,
 				50E296812BB78F9A00D081D8 /* LoadState.swift in Sources */,

@@ -30,7 +30,7 @@ struct Navigate01Feature {
             switch action{
             case .nextTapped:
                 return .run { send in
-                    try? await Task.sleep(nanoseconds: 1_000_000_000)
+//                    try? await Task.sleep(nanoseconds: 1_000_000_000)
                     await send(.anyResponse(.success(true)))
                 }
                 

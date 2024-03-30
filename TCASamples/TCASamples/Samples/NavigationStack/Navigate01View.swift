@@ -20,8 +20,8 @@ struct Navigate01View: View {
             }
         }
         .padding(.all, 48)
-        .navigationDestination(item: $store.scope(state: \.navigate02, action: \.navigate02)) { navigate02Store in
-            Navigate02View(store: navigate02Store)
+        .navigationDestination(item: $store.scope(state: \.navigate02, action: \.navigate02)) { _ in
+            Navigate02View()
         }
     }
 }

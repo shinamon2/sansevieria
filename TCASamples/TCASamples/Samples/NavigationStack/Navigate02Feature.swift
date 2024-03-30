@@ -19,6 +19,7 @@ struct Navigate02Feature {
     }
     
     enum Action {
+        case anyTapped
         case nextTapped
         case anyResponse(Result<Bool, Error>)
     }
@@ -26,6 +27,10 @@ struct Navigate02Feature {
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action{
+            case .anyTapped:
+                logger.debug("このボタンタップ時は、自分のReducerで処理させたい")
+                return .none
+
             case .nextTapped:
                 return .run { send in
                     try? await Task.sleep(nanoseconds: 1_000_000_000)
