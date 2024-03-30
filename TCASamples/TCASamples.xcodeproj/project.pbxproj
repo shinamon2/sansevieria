@@ -185,12 +185,7 @@
 		50E2967A2BB78DAB00D081D8 /* NavigationStack */ = {
 			isa = PBXGroup;
 			children = (
-				50E2967D2BB78F3700D081D8 /* Navigate01Feature.swift */,
-				50E2967B2BB78DB600D081D8 /* Navigate01View.swift */,
-				50E296822BB7A1D500D081D8 /* Navigate02Feature.swift */,
-				50E296832BB7A1D500D081D8 /* Navigate02View.swift */,
-				50E296882BB7AD2300D081D8 /* Navigate03Feature.swift */,
-				50E296892BB7AD2300D081D8 /* Navigate03View.swift */,
+				50E2968C2BB7B2E500D081D8 /* NavigationDestination */,
 			);
 			path = NavigationStack;
 			sourceTree = "<group>";
@@ -202,6 +197,19 @@
 				50E296802BB78F9A00D081D8 /* LoadState.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		50E2968C2BB7B2E500D081D8 /* NavigationDestination */ = {
+			isa = PBXGroup;
+			children = (
+				50E2967D2BB78F3700D081D8 /* Navigate01Feature.swift */,
+				50E2967B2BB78DB600D081D8 /* Navigate01View.swift */,
+				50E296822BB7A1D500D081D8 /* Navigate02Feature.swift */,
+				50E296832BB7A1D500D081D8 /* Navigate02View.swift */,
+				50E296882BB7AD2300D081D8 /* Navigate03Feature.swift */,
+				50E296892BB7AD2300D081D8 /* Navigate03View.swift */,
+			);
+			path = NavigationDestination;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
