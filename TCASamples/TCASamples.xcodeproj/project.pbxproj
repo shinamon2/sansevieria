@@ -21,6 +21,8 @@
 		50E2967C2BB78DB600D081D8 /* Navigate01View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E2967B2BB78DB600D081D8 /* Navigate01View.swift */; };
 		50E2967E2BB78F3700D081D8 /* Navigate01Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E2967D2BB78F3700D081D8 /* Navigate01Feature.swift */; };
 		50E296812BB78F9A00D081D8 /* LoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E296802BB78F9A00D081D8 /* LoadState.swift */; };
+		50E296842BB7A1D500D081D8 /* Navigate02Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E296822BB7A1D500D081D8 /* Navigate02Feature.swift */; };
+		50E296852BB7A1D500D081D8 /* Navigate02View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E296832BB7A1D500D081D8 /* Navigate02View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		50E2967B2BB78DB600D081D8 /* Navigate01View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate01View.swift; sourceTree = "<group>"; };
 		50E2967D2BB78F3700D081D8 /* Navigate01Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate01Feature.swift; sourceTree = "<group>"; };
 		50E296802BB78F9A00D081D8 /* LoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadState.swift; sourceTree = "<group>"; };
+		50E296822BB7A1D500D081D8 /* Navigate02Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigate02Feature.swift; sourceTree = "<group>"; };
+		50E296832BB7A1D500D081D8 /* Navigate02View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigate02View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +179,10 @@
 		50E2967A2BB78DAB00D081D8 /* NavigationStack */ = {
 			isa = PBXGroup;
 			children = (
-				50E2967B2BB78DB600D081D8 /* Navigate01View.swift */,
 				50E2967D2BB78F3700D081D8 /* Navigate01Feature.swift */,
+				50E2967B2BB78DB600D081D8 /* Navigate01View.swift */,
+				50E296822BB7A1D500D081D8 /* Navigate02Feature.swift */,
+				50E296832BB7A1D500D081D8 /* Navigate02View.swift */,
 			);
 			path = NavigationStack;
 			sourceTree = "<group>";
@@ -333,6 +339,8 @@
 				50E296722BB789C600D081D8 /* AppTabview.swift in Sources */,
 				50E296782BB78C8D00D081D8 /* SampleListView.swift in Sources */,
 				50BDC0E02BB7860800ED1E7B /* TCASamplesApp.swift in Sources */,
+				50E296842BB7A1D500D081D8 /* Navigate02Feature.swift in Sources */,
+				50E296852BB7A1D500D081D8 /* Navigate02View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,8 +703,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.9.2;
+				branch = "shared-state-beta";
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
