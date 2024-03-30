@@ -12,7 +12,7 @@ struct AppTabview: View {
     
     var body: some View {
         TabView {
-            Text("First Tab")
+            SampleListView()
                 .tabItem {
                     Image(systemName: "1.square.fill")
                     Text("First")
