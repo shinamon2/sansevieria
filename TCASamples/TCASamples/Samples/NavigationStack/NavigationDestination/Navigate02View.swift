@@ -20,9 +20,13 @@ struct Navigate02View: View {
             Button("何かアクション") {
                 store.send(.anyTapped)
             }
-            
-            Button("次へ") {
-                store.send(.nextTapped)
+            HStack(spacing: 48) {
+                Button("戻る") {
+                    store.send(.backTapped)
+                }
+                Button("次へ") {
+                    store.send(.nextTapped)
+                }
             }
         }
         .padding(.all, 48)
