@@ -13,9 +13,14 @@ struct SampleListView: View {
         NavigationStack {
             Form {
                 Section {
-                    NavigationLink("ナビゲーションスタック") {
+                    NavigationLink("NavigationStack:destination") {
                         Navigate01View(store: Store(initialState: Navigate01Feature.State(), reducer: {
-                            Navigate01Feature()
+                            Navigate01Feature()._printChanges()
+                        }))
+                    }
+                    NavigationLink("NavigationStack:store") {
+                        NavigateStackRootView(store: Store(initialState: NavigateStackRoot.State() , reducer: {
+                            NavigateStackRoot()._printChanges()
                         }))
                     }
                     NavigationLink("モーダル") {

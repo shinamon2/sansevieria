@@ -21,6 +21,7 @@ struct Navigate02Feature {
     enum Action {
         case anyTapped
         case nextTapped
+        case backTapped
         case anyResponse(Result<Bool, Error>)
     }
     
@@ -36,6 +37,9 @@ struct Navigate02Feature {
                     await send(.anyResponse(.success(true)))
                 }
                 
+            case .backTapped:
+                return .none
+
             case .anyResponse(.success(_)):
                 // TODO: 画面遷移処理
                 return .none
@@ -47,4 +51,3 @@ struct Navigate02Feature {
         }
     }
 }
-
